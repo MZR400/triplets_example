@@ -515,6 +515,7 @@ const createTrial = {
         const trialType = jsPsych.timelineVariable('type');
         data.trial_type = trialType;
         data.speedy = data.rt < 900;
+        data.choices = [jsPsych.timelineVariable('choice1'), jsPsych.timelineVariable('choice2')];
         
         if (trialType === 'check') {
             data.correct = data.response === jsPsych.timelineVariable('correct_choice');
@@ -561,7 +562,7 @@ const mainProcedure = {
             }
         }
     ],
-    timeline_variables: createTrialSequence(550, 20, 50), // Adjust numbers as needed. In order: random, check, validation
+    timeline_variables: createTrialSequence(5, 2, 5), // Adjust numbers as needed. In order: random, check, validation
     randomize_order: false // Already randomized in createTrialSequence
 };
 
