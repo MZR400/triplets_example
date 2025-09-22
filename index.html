@@ -42,38 +42,38 @@ const save_data = {
 
 // Your image paths array
 const imagePaths = [
-    "stimuli/rural_day_new_big_church_1.png",
-    "stimuli/rural_day_new_small_house_1.png",
-    "stimuli/rural_day_old_big_church_1.png",
-    "stimuli/rural_day_old_black_man_1.png",
-    "stimuli/rural_day_old_small_house_1.png",
-    "stimuli/rural_day_old_white_woman_1.png",
-    "stimuli/rural_day_young_black_man_1.png",
-    "stimuli/rural_day_young_white_woman_1.png",
-    "stimuli/rural_eve_new_big_church_1.png",
-    "stimuli/rural_eve_new_small_house_1.png",
-    "stimuli/rural_eve_old_big_church_1.png",
-    "stimuli/rural_eve_old_black_man_1.png",
-    "stimuli/rural_eve_old_small_house_1.png",
-    "stimuli/rural_eve_old_white_woman_1.png",
-    "stimuli/rural_eve_young_black_man_1.png",
-    "stimuli/rural_eve_young_white_woman_1.png",
-    "stimuli/urban_day_new_big_house_1.png",
-    "stimuli/urban_day_new_small_church_1.png",
-    "stimuli/urban_day_old_big_house_1.png",
-    "stimuli/urban_day_old_black_woman_1.png",
-    "stimuli/urban_day_old_small_church_1.png",
-    "stimuli/urban_day_old_white_man_1.png",
-    "stimuli/urban_day_young_black_woman_1.png",
-    "stimuli/urban_day_young_white_man_1.png",
-    "stimuli/urban_eve_new_big_house_1.png",
-    "stimuli/urban_eve_new_small_church_1.png",
-    "stimuli/urban_eve_old_big_house_1.png",
-    "stimuli/urban_eve_old_black_woman_1.png",
-    "stimuli/urban_eve_old_small_church_1.png",
-    "stimuli/urban_eve_old_white_man_1.png",
-    "stimuli/urban_eve_young_black_woman_1.png",
-    "stimuli/urban_eve_young_white_man_1.png",
+    "armadillo.png",
+    "baboon.png",
+    "badger.png",
+    "bear.png",
+    "cheetah.png",
+    "chimp.png",
+    "chipmunk.png",
+    "cougar.png",
+    "elephant.png",
+    "gerbil.png",
+    "giraffe.png",
+    "goat.png",
+    "gorilla.png",
+    "guinea pig.png",
+    "hippopotamus.png",
+    "hyena.png",
+    "kangaroo.png",
+    "koala.png",
+    "lemur.png",
+    "manatee.png",
+    "monkey.png",
+    "orangutan.png",
+    "pig.png",
+    "porcupine.png",
+    "racoon.png",
+    "ram.png",
+    "reindeer.png",
+    "rhinoceros.png",
+    "seal.png",
+    "squirrel.png",
+    "tapir.png",
+    "tasmanian devil.png",
     ];
 
 // Preload images
@@ -174,178 +174,179 @@ function generateCheckTrial() {
 // Your predefined validation trials
 const validationTrials = [
     {
+        // trails based on foot type 
         type: 'validation',
-        stimulus: 'stimuli/rural_day_new_small_house_1.png',
-        choice1: 'stimuli/urban_day_new_big_house_1.png',
-        choice2: 'stimuli/rural_day_old_white_woman_1.png'
+        stimulus: 'porcupine.png',
+        choice1: 'reindeer.png',
+        choice2: 'hyena.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/urban_eve_old_small_church_1.png',
-        choice1: 'stimuli/urban_eve_new_big_house_1.png',
-        choice2: 'stimuli/rural_day_old_small_house_1.png'
+        stimulus: 'koala.png',
+        choice1: 'chipmunk.png',
+        choice2: 'bear.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/urban_eve_new_big_house_1.png',
-        choice1: 'stimuli/urban_eve_old_black_woman_1.png',
-        choice2: 'stimuli/urban_eve_new_small_church_1.png'
+        stimulus: 'tasmanian devil.png',
+        choice1: 'cougar.png',
+        choice2: 'seal.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/rural_eve_old_small_house_1.png',
-        choice1: 'stimuli/urban_day_young_black_woman_1.png',
-        choice2: 'stimuli/urban_day_old_white_man_1.png'
+        stimulus: 'cheetah.png',
+        choice1: 'porcupine.png',
+        choice2: 'racoon.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/rural_eve_old_big_church_1.png',
-        choice1: 'stimuli/urban_eve_old_black_woman_1.png',
-        choice2: 'stimuli/urban_day_old_small_church_1.png'
+        stimulus: 'monkey.png',
+        choice1: 'lemur.png',
+        choice2: 'squirrel.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/urban_eve_young_black_woman_1.png',
-        choice1: 'stimuli/rural_day_new_small_house_1.png',
-        choice2: 'stimuli/rural_eve_old_big_church_1.png'
+        stimulus: 'baboon.png',
+        choice1: 'gorilla.png',
+        choice2: 'badger.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/urban_day_young_white_man_1.png',
-        choice1: 'stimuli/urban_eve_young_white_man_1.png',
-        choice2: 'stimuli/urban_eve_old_small_church_1.png'
+        stimulus: 'orangutan.png',
+        choice1: 'rhinoceros.png',
+        choice2: 'chimp.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/urban_eve_new_big_house_1.png',
-        choice1: 'stimuli/rural_day_young_white_woman_1.png',
-        choice2: 'stimuli/rural_day_new_big_church_1.png'
+        stimulus: 'guinea pig.png',
+        choice1: 'squirrel.png',
+        choice2: 'kangaroo.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/rural_eve_young_black_man_1.png',
-        choice1: 'stimuli/rural_eve_old_white_woman_1.png',
-        choice2: 'stimuli/urban_eve_young_black_woman_1.png'
+        stimulus: 'chipmunk.png',
+        choice1: 'raccoon.png',
+        choice2: 'elephant.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/urban_eve_old_white_man_1.png',
-        choice1: 'stimuli/urban_eve_old_big_house_1.png',
-        choice2: 'stimuli/urban_day_old_small_church_1.png'
+        stimulus: 'gerbil.png',
+        choice1: 'ram.png',
+        choice2: 'squirrel.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/urban_day_old_small_church_1.png',
-        choice1: 'stimuli/urban_day_new_small_church_1.png',
-        choice2: 'stimuli/urban_day_young_black_woman_1.png'
+        stimulus: 'badger.png',
+        choice1: 'armadillo.png',
+        choice2: 'cougar.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/urban_day_young_white_man_1.png',
-        choice1: 'stimuli/rural_day_new_small_house_1.png',
-        choice2: 'stimuli/urban_day_new_small_church_1.png'
+        stimulus: 'seal.png',
+        choice1: 'pig.png',
+        choice2: 'manatee.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/rural_day_old_white_woman_1.png',
-        choice1: 'stimuli/rural_day_new_small_house_1.png',
-        choice2: 'stimuli/urban_eve_new_small_church_1.png'
+        stimulus: 'kangaroo.png',
+        choice1: 'raccoon.png',
+        choice2: 'elephant.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/urban_eve_new_big_house_1.png',
-        choice1: 'stimuli/rural_day_old_white_woman_1.png',
-        choice2: 'stimuli/urban_eve_young_black_woman_1.png'
+        stimulus: 'hippopotamus.png',
+        choice1: 'reindeer.png',
+        choice2: 'elephant.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/urban_day_young_white_man_1.png',
-        choice1: 'stimuli/urban_eve_new_small_church_1.png',
-        choice2: 'stimuli/rural_day_old_white_woman_1.png'
+        stimulus: 'manatee.png',
+        choice1: 'Guinea pig.png',
+        choice2: 'rhinoceros.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/urban_day_old_white_man_1.png',
-        choice1: 'stimuli/rural_eve_old_big_church_1.png',
-        choice2: 'stimuli/urban_day_old_black_woman_1.png'
+        stimulus: 'lemur.png',
+        choice1: 'squirrel.png',
+        choice2: 'bear.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/rural_day_old_big_church_1.png',
-        choice1: 'stimuli/rural_eve_old_black_man_1.png',
-        choice2: 'stimuli/rural_eve_young_black_man_1.png'
+        stimulus: 'gerbil.png',
+        choice1: 'chimp.png',
+        choice2: 'tasmanian devil.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/urban_eve_new_big_house_1.png',
-        choice1: 'stimuli/urban_day_young_white_man_1.png',
-        choice2: 'stimuli/urban_eve_old_small_church_1.png'
+        stimulus: 'porcupine.png',
+        choice1: 'monkey.png',
+        choice2: 'manatee.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/urban_day_old_black_woman_1.png',
-        choice1: 'stimuli/urban_eve_old_big_house_1.png',
-        choice2: 'stimuli/urban_eve_new_big_house_1.png'
+        stimulus: 'Guinea pig.png',
+        choice1: 'armadillo.png',
+        choice2: 'monkey.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/urban_day_new_big_house_1.png',
-        choice1: 'stimuli/rural_eve_old_big_church_1.png',
-        choice2: 'stimuli/urban_eve_new_big_house_1.png'
+        stimulus: 'tasmanian devil.png',
+        choice1: 'raccoon.png',
+        choice2: 'cheetah.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/rural_day_new_small_house_1.png',
-        choice1: 'stimuli/urban_day_young_white_man_1.png',
-        choice2: 'stimuli/rural_day_new_big_church_1.png'
+        stimulus: 'hyena.png',
+        choice1: 'ram.png',
+        choice2: 'gorilla.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/urban_eve_old_white_man_1.png',
-        choice1: 'stimuli/rural_eve_old_black_man_1.png',
-        choice2: 'stimuli/urban_eve_young_white_man_1.png'
+        stimulus: 'pig.png',
+        choice1: 'giraffe.png',
+        choice2: 'badger.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/rural_day_old_big_church_1.png',
-        choice1: 'stimuli/urban_eve_old_black_woman_1.png',
-        choice2: 'stimuli/urban_eve_old_small_church_1.png'
+        stimulus: 'baboon.png',
+        choice1: 'koala.png',
+        choice2: 'lemur.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/rural_day_new_small_house_1.png',
-        choice1: 'stimuli/urban_eve_young_white_man_1.png',
-        choice2: 'stimuli/urban_day_young_white_man_1.png'
+        stimulus: 'goat.png',
+        choice1: 'cougar.png',
+        choice2: 'reindeer.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/urban_eve_old_small_church_1.png',
-        choice1: 'stimuli/rural_eve_young_black_man_1.png',
-        choice2: 'stimuli/urban_eve_young_white_man_1.png'
+        stimulus: 'badger.png',
+        choice1: 'ram.png',
+        choice2: 'kangaroo.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/urban_day_old_white_man_1.png',
-        choice1: 'stimuli/rural_day_young_white_woman_1.png',
-        choice2: 'stimuli/urban_day_new_big_house_1.png'
+        stimulus: 'bear.png',
+        choice1: 'reindeer.png',
+        choice2: 'raccoon.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/urban_eve_old_white_man_1.png',
-        choice1: 'stimuli/rural_day_young_black_man_1.png',
-        choice2: 'stimuli/urban_eve_new_big_house_1.png'
+        stimulus: 'giraffe.png',
+        choice1: 'manatee.png',
+        choice2: 'squirrel.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/rural_day_new_big_church_1.png',
-        choice1: 'stimuli/urban_day_old_small_church_1.png',
-        choice2: 'stimuli/rural_day_young_white_woman_1.png'
+        stimulus: 'hippopotamus.png',
+        choice1: 'cheetah.png',
+        choice2: 'tapir.png'
     },
     {
         type: 'validation',
-        stimulus: 'stimuli/rural_eve_old_big_church_1.png',
-        choice1: 'stimuli/rural_day_old_white_woman_1.png',
-        choice2: 'stimuli/urban_day_old_small_church_1.png'
+        stimulus: 'reindeer.png',
+        choice1: 'elephant.png',
+        choice2: 'goat.png'
     },
     {
         type: 'validation',
