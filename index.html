@@ -174,35 +174,64 @@ function generateCheckTrial() {
 // Your predefined validation trials
 const validationTrials = [
     {
-        // trails based on foot type 
+        // independent claw 
         type: 'validation',
         stimulus: 'porcupine.png',
         choice1: 'reindeer.png',
         choice2: 'hyena.png'
     },
     {
+        
         type: 'validation',
         stimulus: 'koala.png',
         choice1: 'chipmunk.png',
         choice2: 'bear.png'
     },
-    {
+    { 
         type: 'validation',
         stimulus: 'tasmanian devil.png',
         choice1: 'cougar.png',
         choice2: 'seal.png'
     },
     {
+        //independent claw and size 
         type: 'validation',
-        stimulus: 'cheetah.png',
-        choice1: 'porcupine.png',
+        stimulus: 'bear.png',
+        choice1: 'cheetah.png',
+        choice2: 'armadillo.png'
+    },
+    {
+        //cross domain claw and small 
+        type: 'validation',
+        stimulus: 'porcupine.png',
+        choice1: 'cheetah.png',
         choice2: 'racoon.png'
     },
     {
         type: 'validation',
+        stimulus: 'tasmanian devil.png',
+        choice1: 'Guinea pig.png',
+        choice2: 'bear.png'
+    },
+    {
+        //cross domain claw and medium 
+        type: 'validation',
+        stimulus: 'cougar.png',
+        choice1: 'cheetah pig.png',
+        choice2: 'chimp.png'
+    },
+    {
+         type: 'validation',
+        stimulus: 'porcupine.png',
+        choice1: 'badger pig.png',
+        choice2: 'koala.png'
+    },
+    {
+        // independent prim 
+        type: 'validation',
         stimulus: 'monkey.png',
-        choice1: 'lemur.png',
-        choice2: 'squirrel.png'
+        choice1: 'baboon.png',
+        choice2: 'badger.png'
     },
     {
         type: 'validation',
